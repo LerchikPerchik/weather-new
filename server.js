@@ -3,10 +3,10 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
 
-const apiKey = '*****************';
+const apiKey = '97e532aa4ea1a49b64ff3773f38b1702';
 
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
